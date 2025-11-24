@@ -1,0 +1,91 @@
+@layer pages {
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 75px;
+    padding-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+    /*.logo{
+
+    }*/
+
+    nav {
+      display: flex;
+      gap: 3rem;
+      letter-spacing: 0.08rem;
+      flex-direction: row;
+
+      ul {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+  }
+
+  .side_left {
+    position: absolute;
+    left: 75px;
+    bottom: 75px;
+
+    svg {
+      width: 30px;
+    }
+  }
+
+  .side_right {
+    position: absolute;
+    right: 75px;
+    bottom: 75px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 30px;
+      height: 155px;
+    }
+  }
+
+  .hero {
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+    .central {
+
+      h1 {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+
+        span.name {
+          font-size: 10rem;
+          font-weight: 800;
+          color: var(--text-primary);
+          letter-spacing: -0.3rem;
+        }
+
+        span.second_name {
+          font-size: 6.5rem;
+          font-weight: 800;
+          color: var(--text-primary);
+          letter-spacing: -0.2rem;
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+        letter-spacing: 0.6rem;
+      }
+    }
+  }
+}
