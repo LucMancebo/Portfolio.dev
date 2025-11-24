@@ -4,7 +4,8 @@
     --bg-soft: #1a1a1a;
     --text: #ff5e00fd;
     --accent: #ff4d00;
-    --font-main: "Roboto", sans-serif;
+    --font-bold: "Roboto", sans-serif;
+    --font-primary: 'Smooch Sans', sans-serif;
   }
 
   body {
@@ -14,9 +15,9 @@
       var(--bg) 70%,
       #000 100%
     );
-
+    font-family: var(--font-primary);
+    font-weight: 400;
     color: var(--text);
-    font-family: var(--font-main);
     overflow-x: hidden;
     box-sizing: border-box;
     height: 100vh;
@@ -27,5 +28,9 @@
   }
   h1 {
     margin: 0;
+    font-family: var(--font-bold);
+  }
+  p {
+    font-family: 'Smooch Sans', sans-serif;
   }
 }

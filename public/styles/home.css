@@ -9,15 +9,18 @@
     align-items: center;
     z-index: 10;
 
-    /*.logo{
-
-    }*/
+    .logo {
+      img {
+        width: 48px;
+      }
+    }
 
     nav {
       display: flex;
       gap: 3rem;
       letter-spacing: 0.08rem;
       flex-direction: row;
+      font-size: 1.5rem;
 
       ul {
         display: flex;
@@ -30,10 +33,6 @@
     position: absolute;
     left: 75px;
     bottom: 75px;
-
-    svg {
-      width: 30px;
-    }
   }
 
   .side_right {
@@ -55,17 +54,15 @@
     height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     align-content: center;
+    text-align: center;
+    
 
     .central {
-
       h1 {
         display: flex;
         flex-direction: column;
-        line-height: 1;
+        line-height: 0.8;
 
         span.name {
           font-size: 10rem;
@@ -75,10 +72,11 @@
         }
 
         span.second_name {
-          font-size: 6.5rem;
-          font-weight: 800;
+          font-size: 13.4rem;
           color: var(--text-primary);
           letter-spacing: -0.2rem;
+          font-weight: 100;
+          font-family: "Smooch Sans", sans-serif;
         }
       }
 
